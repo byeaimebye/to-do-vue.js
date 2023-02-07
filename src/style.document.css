@@ -1,0 +1,162 @@
+:root {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-weight: bolder;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary: #F9D030; 
+  --business: #26DFD0; 
+  --personal: #F62AA0;
+  --green: #B8EE30;
+}
+
+
+body {
+  margin: 0 auto;
+  color: black;
+  border: 1px solid black;
+  font-weight: bolder;
+  max-width: 360px;
+  height: 100vh;
+  background-color: #F8F5FF;
+}
+
+.greeting{
+  padding: 10px;
+  display: flex;
+}
+ input[type="text"]{
+    border: none;
+    border-radius: 12px;
+    outline:none;
+    background-color: transparent;
+    color: black;
+    height: 20px;
+    padding: 9px;
+    font-size: 24px;
+    width: fit-content;
+}
+
+.create-todo {
+  padding: 20px
+}
+
+.input-todo{
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.create-todo h3{
+  margin-top: -10px;
+}
+
+form .options{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+form .options .business {
+  background-color:var(--business);
+  border-radius: 12px;
+  padding: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+form .options .personal {
+  background-color:var(--personal);
+  border-radius: 12px;
+  padding: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.create-todo .button-submit{
+  padding:10px;
+  border-radius: 12px;
+  width: 100%;
+  background-color: var(--green);
+  border: none;
+  font-size: 18px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.create-todo .button-submit:hover{
+  border: 1px var(--personal) solid;
+  box-shadow: none;
+
+}
+
+.todo-list{
+  padding:20px;
+  margin-top: -30px;
+}
+
+.list-item{
+  width: 100px;
+  display:flex;
+}
+.todo-item{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  border-radius: 12px;
+  padding: 5px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item input{
+  width: 90%;
+  font-size: 20px;
+}
+.todo-item label{
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+.todo-item.done .todo-content input{
+  text-decoration: line-through;
+}
+.list-item input{
+  width: 100px;
+}
+.actions button{
+  background-color: transparent;
+  border:none;
+  padding: 10px;
+
+  display: flex;
+}
+.actions button:hover{
+  background-color: rgb(249, 208, 48, 26%);
+  border-radius: 50px;
+  display: flex;
+}
+.actions button svg path{
+    fill: red
+}
+label.bubble.personal{
+  background-color: var(--personal);
+}
+label.bubble.business{
+  background-color: var(--business);
+}
+
+
